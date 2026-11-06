@@ -1,6 +1,6 @@
 # Resume entry
 
-**Banking Customer Churn Analytics & Predictive Modeling** | Python, PostgreSQL, pandas, SciPy, scikit-learn  
+**Banking Customer Churn Analytics & Predictive Modeling** | Python, PostgreSQL, pandas, SciPy, scikit-learn
 [GitHub repository](https://github.com/alnurturgaliyev/bank-churn-portfolio)
 
 - Built a Python–PostgreSQL workflow for 10,000 customer records, including relational data validation, SQL churn analysis, and exploratory statistical testing.
