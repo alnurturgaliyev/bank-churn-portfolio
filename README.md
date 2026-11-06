@@ -104,7 +104,7 @@ python scripts/inspect_data.py > inspection_report.txt
 python scripts/prepare_data.py
 ```
 
-The lock file records the environment used for the saved results. Raw/derived customer data and the fitted binary are regenerated locally rather than bundled in Git. The downloader pins the source revision and verifies SHA-256. [Dataset source and checksum](docs/data_provenance.md).
+The lock file records the environment used for the saved results. Raw/derived customer data and the fitted binary are regenerated locally rather than bundled in Git. The downloader pins the source revision and verifies SHA-256.
 
 ### PostgreSQL route: full workflow
 

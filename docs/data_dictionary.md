@@ -25,4 +25,4 @@ Age, salary, tenure, and balance use median imputation and standard scaling. Mis
 
 ## Provenance
 
-See [data provenance](data_provenance.md) for the source revision and checksum. Real-bank provenance, representativeness, and feature timing have not been established. No real-world retention impact is claimed.
+The download script records the source revision and checksum. Real-bank provenance, representativeness, and feature timing have not been established. No real-world retention impact is claimed.
