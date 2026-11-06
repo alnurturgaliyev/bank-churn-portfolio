@@ -10,10 +10,8 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 sheets = pd.read_excel(DATA_PATH, sheet_name=None)
 
-# Names aren't needed for our analysis or prediction.
 demographic = sheets["Demographic"].drop(columns=["Name"])
 
-# Preserve the original IDs and missing balances.
 account = sheets["Account"].copy()
 location = sheets["Location"].copy()
 
