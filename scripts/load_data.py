@@ -8,7 +8,6 @@ from db import create_db_engine
 BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / "data" / "processed"
 
-# Match the CSV headers to our PostgreSQL column names.
 COLUMN_NAMES = {
     "LocationId": "location_id",
     "Geography": "geography",
@@ -25,7 +24,6 @@ COLUMN_NAMES = {
     "IsActive": "is_active",
 }
 
-# Load parent tables before tables that reference them.
 TABLE_ORDER = ["location", "demographic", "account"]
 
 tables = {
@@ -39,7 +37,6 @@ engine = create_db_engine()
 
 try:
     with engine.begin() as connection:
-        # Stop if data already exists, preventing accidental duplicate loads.
         for name in TABLE_ORDER:
             count = connection.execute(
                 text(f"SELECT COUNT(*) FROM public.{name}")
