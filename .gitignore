@@ -5,7 +5,7 @@ __pycache__/
 .env
 .DS_Store
 
-# Regenerate tutorial data and fitted binaries using the README instructions.
+# Regenerate source data and fitted binaries using the README instructions.
 /data/
 /models/*.joblib
 /reports/final_test_predictions.csv

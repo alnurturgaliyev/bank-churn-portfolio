@@ -1,6 +1,6 @@
 # Data dictionary
 
-One customer has one demographic row and one account row in this tutorial dataset. Many customers reference one location. Source names are converted to snake_case when loading PostgreSQL.
+One customer has one demographic row and one account row in this dataset. Many customers reference one location. Source names are converted to snake_case when loading PostgreSQL.
 
 | PostgreSQL field | Source field | Meaning / handling |
 |---|---|---|
@@ -25,4 +25,4 @@ Age, salary, tenure, and balance use median imputation and standard scaling. Mis
 
 ## Provenance
 
-See [data provenance](data_provenance.md) for the source revision and checksum. These are tutorial data; real-bank provenance, representativeness, and feature timing have not been established. No real-world retention impact is claimed.
+See [data provenance](data_provenance.md) for the source revision and checksum. Real-bank provenance, representativeness, and feature timing have not been established. No real-world retention impact is claimed.

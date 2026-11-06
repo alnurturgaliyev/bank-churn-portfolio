@@ -25,4 +25,4 @@ python scripts/verify_artifacts.py
 
 The clean run used a copy of the checksum-verified workbook and the selected parameter JSON. The regenerated train.csv and test.csv were byte-identical to the original PostgreSQL-derived split files. It reproduced the saved final confusion matrix (TN 1321, FP 272, FN 102, TP 305) and six reported metrics. This was a reproducibility check with fixed settings, not a new tuning experiment.
 
-This check did not create a fresh package environment or recreate the PostgreSQL server. The original database loading and SQL row-count/join verification were performed earlier in the guided workflow. Tableau remains deferred.
+This check did not create a fresh package environment or recreate the PostgreSQL server. The original database loading and SQL row-count/join verification were performed earlier in the workflow. Tableau remains deferred.

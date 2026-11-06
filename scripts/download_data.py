@@ -1,4 +1,4 @@
-"""Download the tutorial workbook at a fixed source revision and verify it."""
+"""Download the source workbook at a fixed source revision and verify it."""
 
 import hashlib
 from pathlib import Path

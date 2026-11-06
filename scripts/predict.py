@@ -34,7 +34,7 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     result.to_csv(args.output, index=False)
     print(f"Saved {len(result)} predictions to {args.output}")
-    print("Scores are uncalibrated; this is a retrospective educational model.")
+    print("Scores are uncalibrated; this is a retrospective classification model.")
 
 
 if __name__ == "__main__":

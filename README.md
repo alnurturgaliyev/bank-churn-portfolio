@@ -1,6 +1,6 @@
 # Banking Customer Churn Analytics & Predictive Modeling
 
-Python and PostgreSQL portfolio project analyzing 10,000 tutorial customer records, testing churn associations, and comparing classification models. A tuned random forest achieved **ROC AUC 0.8622** and **74.94% churn recall** on a fixed 2,000-customer test split.
+Python and PostgreSQL portfolio project analyzing 10,000 customer records, testing churn associations, and comparing classification models. A tuned random forest achieved **ROC AUC 0.8622** and **74.94% churn recall** on a fixed 2,000-customer test split.
 
 **Status:** analytics and modeling complete. Tableau dashboard not complete yet
 
@@ -22,7 +22,7 @@ The selected pipeline detected **305 of 407 churners**, missed 102, and raised 2
 | Retained | 1,321 | 272 |
 | Churned | 102 | 305 |
 
-Predicting everyone would stay would achieve 79.65% test accuracy but zero churn recall. This is why accuracy was not the selection metric. Results describe a retrospective tutorial-data experiment, not a deployed bank system or measured retention uplift.
+Predicting everyone would stay would achieve 79.65% test accuracy but zero churn recall. This is why accuracy was not the selection metric. Results describe a retrospective classification experiment, not a deployed bank system or measured retention uplift.
 
 ## Workflow
 
@@ -104,7 +104,7 @@ python scripts/inspect_data.py > inspection_report.txt
 python scripts/prepare_data.py
 ```
 
-The lock file records the environment used for the saved results. Raw/derived customer data and the fitted binary are regenerated locally rather than bundled in Git. The downloader pins the source revision and verifies SHA-256. [Provenance and attribution](docs/data_provenance.md).
+The lock file records the environment used for the saved results. Raw/derived customer data and the fitted binary are regenerated locally rather than bundled in Git. The downloader pins the source revision and verifies SHA-256. [Dataset source and checksum](docs/data_provenance.md).
 
 ### PostgreSQL route: full workflow
 
@@ -189,7 +189,6 @@ requirements-lock.txt Verified environment versions
 - Full-dataset EDA preceded the split. The test portion was excluded from model fitting and tuning, but is not wholly independent of earlier exploratory decisions.
 - Real-bank provenance, the churn outcome window, and whether each feature predates churn are unverified. This is retrospective classification, not a validated prospective early-warning system.
 - Exploratory statistical tests do not prove causation. Customer independence and representativeness cannot be established from the workbook alone.
-- Gender is included to reproduce an educational experiment. This is not a recommendation for operational targeting; subgroup performance and policy review have not been conducted.
+- Gender is included as a model input. This is not a recommendation for operational targeting; subgroup performance and policy review have not been conducted.
 - Scores are uncalibrated; no business contact budget, retention cost model, or intervention impact was measured.
-- Tableau is planned separately. This version also does not implement SVM, XGBoost, or claim to reproduce every tutorial experiment.
-
+- Tableau is planned separately. SVM and XGBoost are not implemented in this version.

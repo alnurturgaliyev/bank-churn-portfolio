@@ -12,8 +12,8 @@
 
 ## Interview explanation
 
-This was a guided portfolio implementation based on Mehrdad Dehghan's tutorial, adapted to PostgreSQL on macOS with AI assistance. I inspected the source data, preserved missing balances, validated joins, explored churn patterns with SQL, ran statistical comparisons, and compared models using a preprocessing pipeline inside cross-validation. I selected a random forest using training-fold F1, fixed its threshold, and evaluated it on a separate test portion. Full-dataset exploration happened before the split, which I document as an evaluation limitation. Tableau is deferred. The work demonstrates retrospective analysis and modeling, not production deployment or measured retention uplift.
+I inspected the source data, preserved missing balances, validated joins, explored churn patterns with SQL, ran statistical comparisons, and compared models using a preprocessing pipeline inside cross-validation. I selected a random forest using training-fold F1, fixed its threshold, and evaluated it on a separate test portion. Full-dataset exploration happened before the split, which I document as an evaluation limitation. Tableau is deferred. The work demonstrates retrospective analysis and modeling, not production deployment or measured retention uplift.
 
 ## Claims to avoid
 
-Do not list a Tableau dashboard as completed, describe the tutorial data as verified real bank data, claim deployment or revenue/retention impact, or describe the model scores as calibrated customer probabilities.
+Do not list a Tableau dashboard as completed, describe the dataset as verified real bank data, claim deployment or revenue/retention impact, or describe the model scores as calibrated customer probabilities.
