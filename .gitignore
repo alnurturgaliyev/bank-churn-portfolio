@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+
+# Regenerate tutorial data and fitted binaries using the README instructions.
+/data/
+/models/*.joblib
+/reports/final_test_predictions.csv
+/reports/example_predictions.csv
+.env.*
+!.env.example
+/inspection_report.txt

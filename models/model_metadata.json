@@ -1,0 +1,27 @@
+{
+  "model": "RandomForestClassifier",
+  "selected_parameters": {
+    "classifier__max_depth": 8,
+    "classifier__max_features": 0.7,
+    "classifier__min_samples_leaf": 5
+  },
+  "n_estimators": 300,
+  "class_weight": "balanced",
+  "random_state": 42,
+  "classification_threshold": 0.5,
+  "training_rows": 8000,
+  "test_rows": 2000,
+  "feature_columns": [
+    "gender",
+    "age",
+    "salary",
+    "geography",
+    "tenure",
+    "balance",
+    "num_products",
+    "has_credit_card",
+    "is_active"
+  ],
+  "sklearn_version": "1.9.1",
+  "scores_calibrated": false
+}

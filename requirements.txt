@@ -1,0 +1,7 @@
+pandas
+openpyxl
+sqlalchemy
+psycopg[binary]
+scipy
+scikit-learn
+joblib

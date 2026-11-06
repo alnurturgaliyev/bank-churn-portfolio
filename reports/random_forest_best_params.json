@@ -1,0 +1,5 @@
+{
+  "classifier__max_depth": 8,
+  "classifier__max_features": 0.7,
+  "classifier__min_samples_leaf": 5
+}

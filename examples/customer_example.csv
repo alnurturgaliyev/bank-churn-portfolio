@@ -1,0 +1,3 @@
+customer_id,gender,age,salary,geography,tenure,balance,num_products,has_credit_card,is_active
+demo_001,Female,42,65000,France,5,80000,2,1,1
+demo_002,Male,55,90000,Germany,3,,1,0,0
