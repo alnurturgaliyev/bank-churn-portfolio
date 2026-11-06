@@ -1,6 +1,6 @@
 # Banking Customer Churn Analytics & Predictive Modeling
 
-Python and PostgreSQL portfolio project analyzing 10,000 customer records, testing churn associations, and comparing classification models. A tuned random forest achieved **ROC AUC 0.8622** and **74.94% churn recall** on a fixed 2,000-customer test split.
+Python and PostgreSQL portfolio project analyzing ≈10,000 customer records, testing churn associations, and comparing classification models. A tuned random forest achieved **ROC AUC 0.8622** and **74.94% churn recall** on a fixed 2,000-customer test split.
 
 **Status:** analytics and modeling complete. Tableau dashboard not complete yet
 
